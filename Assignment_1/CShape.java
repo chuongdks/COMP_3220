@@ -1,8 +1,10 @@
 public abstract class CShape {
-    public static int id = 0;  // Static counter for unique IDs
+    private static int counter = 0;  // Static counter for unique IDs
+    private final int id;  // Unique ID for each shape
 
     public CShape() {
-        id++; // id counter increase everytime CShape object is created
+        counter++;  // Increment counter everytime a Shape object is generated
+        this.id = counter; // Each Shape has an ID
     }
 
     /**
@@ -20,5 +22,5 @@ public abstract class CShape {
     public abstract double getArea(); // It is an abstract method in Shape class
 
     @Override
-    public abstract String toString();  // Abstract method to get shape details
+    public abstract String toString();  // Abstract method to get shape details    
 }

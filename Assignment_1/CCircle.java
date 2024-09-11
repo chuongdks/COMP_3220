@@ -10,4 +10,22 @@ public class CCircle extends COval {
     public String toString() {
         return "CIRCLE " + radius;
     }
+
+    @Override
+    public boolean equals(Object object)
+    {
+        boolean isEqual= false;
+    
+        if (object != null && object instanceof CCircle)
+        {
+            isEqual = (this.radius == ((CCircle) object).radius);
+        }
+    
+        return isEqual;
+    }
+    
+    // @Override
+    // public int hashCode() {
+    //     return this.radius;
+    // } 
 }

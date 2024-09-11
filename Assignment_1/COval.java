@@ -16,4 +16,22 @@ public class COval extends CShape {
     public String toString() {
         return "OVAL " + horizontalRadius + "x" + verticalRadius;
     }
+    
+    @Override
+    public boolean equals(Object object)
+    {
+        boolean isEqual= false;
+    
+        if (object != null && object instanceof COval)
+        {
+            isEqual = (this.horizontalRadius == ((COval) object).horizontalRadius);
+        }
+    
+        return isEqual;
+    }
+    
+    // @Override
+    // public int hashCode() {
+    //     return this.horizontalRadius;
+    // }    
 }

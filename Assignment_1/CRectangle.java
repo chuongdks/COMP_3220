@@ -16,4 +16,22 @@ public class CRectangle extends CShape {
     public String toString() {
         return "RECTANGLE " + length + "x" + width;
     }
+
+    @Override
+    public boolean equals(Object object)
+    {
+        boolean isEqual= false;
+    
+        if (object != null && object instanceof CRectangle)
+        {
+            isEqual = (this.length == ((CRectangle) object).length);
+        }
+    
+        return isEqual;
+    }
+    
+    // @Override
+    // public int hashCode() {
+    //     return this.length;
+    // }   
 }
