@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"CanvasTester"},{"p":"<Unnamed>","l":"CCanvas"},{"p":"<Unnamed>","l":"CCircle"},{"p":"<Unnamed>","l":"COval"},{"p":"<Unnamed>","l":"CRectangle"},{"p":"<Unnamed>","l":"CShape"},{"p":"<Unnamed>","l":"CSquare"}];updateSearchResults();
