@@ -1,9 +1,18 @@
 import java.util.ArrayList;
 import java.util.Random;
 
-// Canvas "has-a" Shape, based on SeatReservation.java file
+/**
+ * CCanvas class has a list of 10 Randoms Shape(s) class 
+ * The class check for duplication  (ie. same dimensions of the same shape)
+ * 
+ * @author Chuong Pham
+ * @since 2024-9-12
+ */
+// Canvas "has-a" Shape, based on SeatReservation.java file in 2120
 public class CCanvas {
-    // Arraylist for Canvas based on the "CShape" Class
+    /**
+     * Arraylist for Canvas based on the "CShape" Class
+     */
     private ArrayList<CShape> shapes; // An ArrayList of type CShape, Has-a relationship
 
     // Constructor of CCanvas to add an ArrayList of "Shape" Class

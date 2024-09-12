@@ -1,5 +1,17 @@
+/**
+ * COval class has a horizontal radius and a vertical radius. An Oval "is-a" Shape
+ * 
+ * @author Chuong Pham
+ * @since 2024-9-12
+ */
 public class COval extends CShape {
+    /**
+     * horizontalRadius for the Oval shape
+     */    
     private int horizontalRadius;
+    /**
+     * verticalRadius for the Oval shape
+     */        
     private int verticalRadius;
 
     public COval(int horizontalRadius, int verticalRadius) {
@@ -16,7 +28,12 @@ public class COval extends CShape {
     public String toString() {
         return "OVAL " + horizontalRadius + "x" + verticalRadius;
     }
-    
+
+    /**
+     * Override equals method to use the contains method to check for duplicate
+     * 
+     * @see <a href="https://stackoverflow.com/questions/16273310/check-if-an-arraylist-contains-a-given-object">Reference Link</a>
+     */        
     @Override
     public boolean equals(Object object)
     {
@@ -29,9 +46,14 @@ public class COval extends CShape {
     
         return isEqual;
     }
-    
-    // @Override
-    // public int hashCode() {
-    //     return this.horizontalRadius;
-    // }    
+
+    /**
+     * Override hashCode method to use the contains method to check for duplicate
+     * 
+     * @see <a href="https://stackoverflow.com/questions/16273310/check-if-an-arraylist-contains-a-given-object">Reference Link</a>
+     */       
+    @Override
+    public int hashCode() {
+        return this.horizontalRadius;
+    }    
 }

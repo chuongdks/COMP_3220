@@ -1,8 +1,17 @@
+/**
+ * CCircle is a specific type of Oval with one radius value
+ * 
+ * @author Chuong Pham
+ * @since 2024-9-12
+ */
 public class CCircle extends COval {
+    /**
+     * radius for the Circle shape
+     */       
     private int radius;
 
     public CCircle(int radius) {
-        super(radius, radius);  // Call COval constructor with the same radius, A Circle is a specific type of Oval with one radius value
+        super(radius, radius);  // Call COval constructor with the same radius
         this.radius = radius;
     }
 
@@ -11,6 +20,11 @@ public class CCircle extends COval {
         return "CIRCLE " + radius;
     }
 
+    /**
+     * Override equals method to use the contains method to check for duplicate
+     * 
+     * @see <a href="https://stackoverflow.com/questions/16273310/check-if-an-arraylist-contains-a-given-object">Reference Link</a>
+     */  
     @Override
     public boolean equals(Object object)
     {
@@ -24,8 +38,13 @@ public class CCircle extends COval {
         return isEqual;
     }
     
-    // @Override
-    // public int hashCode() {
-    //     return this.radius;
-    // } 
+    /**
+     * Override hashCode method to use the contains method to check for duplicate
+     * 
+     * @see <a href="https://stackoverflow.com/questions/16273310/check-if-an-arraylist-contains-a-given-object">Reference Link</a>
+     */       
+    @Override
+    public int hashCode() {
+        return this.radius;
+    } 
 }
