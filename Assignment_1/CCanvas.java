@@ -88,7 +88,7 @@ public class CCanvas {
         System.out.println("Canvas has the following random shapes:");
         for (CShape shape : shapes) 
         {
-            System.out.println("Shape " + shape.getId() + ": " + shape.toString());
+            System.out.println("Shape " + shape.getId() + ": " + shape);
         }
         System.out.printf("Total area of all shapes is: %.2f\n", getTotalArea());
     }
