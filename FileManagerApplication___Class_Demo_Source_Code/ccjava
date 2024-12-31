@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# (c)Dr. Ziad Kobti - All Rights Reserved.
+# This script only works on the cs server
+# make sure you enable executable permissions to be able to run it: chmod +x ccjava
+# you can run this script by typing: ./ccjava
+
+echo Compiling all java sources...
+javac RecordTemplate.java Record.java RecordList.java RecordViewer.java ConsoleViewer.java GraphicViewer.java FileManager.java FileManagerApplication.java
+echo To execute type: java FileManagerApplication graphics or console
